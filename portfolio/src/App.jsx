@@ -1,5 +1,7 @@
+import { Outlet } from "react-router-dom";
 import { useState } from "react";
 import Header from "./components/Header";
+import { MantineProvider } from "@mantine/core";
 // import "./App.css";
 
 function App() {
@@ -7,9 +9,12 @@ function App() {
 
   return (
     <>
-      <div>
+      <MantineProvider>
         <Header />
-      </div>
+        <div>
+          <Outlet />
+        </div>
+      </MantineProvider>
     </>
   );
 }

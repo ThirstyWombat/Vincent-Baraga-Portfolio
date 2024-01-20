@@ -21,7 +21,7 @@ function Header() {
 
       {/* <AppShell.Navbar p="md">Navbar</AppShell.Navbar> */}
 
-      <AppShell.Main>Main</AppShell.Main>
+      {/* <AppShell.Main>Main</AppShell.Main> */}
     </AppShell>
   );
 }
