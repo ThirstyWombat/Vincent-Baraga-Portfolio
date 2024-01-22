@@ -1,14 +1,26 @@
-import { AppShell, Burger, Center } from "@mantine/core";
+import { AppShell, Burger, Center, Container } from "@mantine/core";
+import { useState } from "react";
 import { useDisclosure } from "@mantine/hooks";
 import Navigation from "./Navigation";
+import classes from "./Header.module.css";
 function Header() {
-  const [opened, { toggle }] = useDisclosure();
-
+  const [opened, { toggle }] = useDisclosure(false);
   return (
-    <AppShell
-      header={{ height: 100 }}
+    <header className={classes.header}>
+      <Container size="md" className={classes.inner}>
+        <Navigation />
+        <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
+      </Container>
+    </header>
+  );
+}
+
+export default Header;
+{
+  /* <AppShell
+      header={{ height: 99 }}
       navbar={{
-        width: 300,
+        width: 299,
         breakpoint: "sm",
         collapsed: { mobile: !opened },
       }}
@@ -19,11 +31,10 @@ function Header() {
         <Navigation />
       </AppShell.Header>
 
-      {/* <AppShell.Navbar p="md">Navbar</AppShell.Navbar> */}
-
-      {/* <AppShell.Main>Main</AppShell.Main> */}
-    </AppShell>
-  );
+      {/* <AppShell.Navbar p="md">Navbar</AppShell.Navbar> */
 }
 
-export default Header;
+{
+  /* <AppShell.Main>Main</AppShell.Main> */
+}
+// </AppShell> */}

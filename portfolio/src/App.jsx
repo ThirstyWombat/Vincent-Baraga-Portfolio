@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import { useState } from "react";
 import Header from "./components/Header";
 import { MantineProvider } from "@mantine/core";
+import "@mantine/core/styles.css";
 // import "./App.css";
 
 function App() {
