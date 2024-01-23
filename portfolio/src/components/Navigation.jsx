@@ -17,17 +17,10 @@ function Navigation() {
     <NavLink
       key={link.label}
       to={link.link}
-      //   className={classes.link}
       className={({ isActive }) =>
-        `${classes.link} ${
-          isActive ? classes.linkActive : classes.linkInactive
-        }`
+        `${classes.link} ${isActive ? classes.linkActive : ""}`
       }
       data-active={active === link.link || undefined}
-      //   onClick={(event) => {
-      //     event.preventDefault();
-      //     setActive(link.link);
-      //   }}
     >
       {link.label}
     </NavLink>
@@ -40,21 +33,3 @@ function Navigation() {
 }
 
 export default Navigation;
-{
-  /* <Tabs defaultValue="About Me">
-      <Tabs.List justify="center">
-        <Link to="/">
-          <Tabs.Tab value="About Me">About Me</Tabs.Tab>
-        </Link>
-        <Link to="/Portfolio">
-          <Tabs.Tab value="Portfolio">Portfolio</Tabs.Tab>
-        </Link>
-        <Link to="/Contact">
-          <Tabs.Tab value="Contact">Contact</Tabs.Tab>
-        </Link>
-        <Link to="/Resume">
-          <Tabs.Tab value="Resume">Resume</Tabs.Tab>
-        </Link>
-      </Tabs.List>
-    </Tabs> */
-}
