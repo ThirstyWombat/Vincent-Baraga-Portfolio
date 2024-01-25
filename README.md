@@ -1,6 +1,8 @@
 # Vincent-Baraga-Portfolio
 
-<a href="">Vincent Baraga's Portfolio</a>
+![Portfolio Picture](https://github.com/ThirstyWombat/Vincent-Baraga-Portfolio/assets/122827259/58c81738-1ea7-4ae1-946f-3b7d36e79a7d)
+
+<a href="https://wondrous-pixie-3ee3aa.netlify.app/">Vincent Baraga's Portfolio</a>
 
 ## Description
 
