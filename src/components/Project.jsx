@@ -1,4 +1,4 @@
-import { Anchor, Image, Card } from "@mantine/core";
+import { Text, Image, Card } from "@mantine/core";
 
 export default function Project(props) {
   return (

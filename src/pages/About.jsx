@@ -1,5 +1,5 @@
-import { Image, Paper, Text, Flex, Box } from "@mantine/core";
-import myImage from "../assets/profile picture bootcamp.jpg";
+import { Image, Paper, Text, Flex } from "@mantine/core";
+import myImage from "/assets/profile picture bootcamp.jpg";
 export default function About() {
   return (
     <Flex

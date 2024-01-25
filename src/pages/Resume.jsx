@@ -1,4 +1,4 @@
-import { Box, List, Paper, Text, Anchor, ListItem } from "@mantine/core";
+import { Box, List, Paper, Text, Anchor } from "@mantine/core";
 
 export default function Resume() {
   return (

@@ -1,7 +1,5 @@
-import { Tabs } from "@mantine/core";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Group } from "@mantine/core";
-import { useState } from "react";
 import classes from "./Header.module.css";
 function Navigation() {
   const links = [
@@ -11,8 +9,6 @@ function Navigation() {
     { link: "/Resume", label: "Resume" },
   ];
 
-  const [active, setActive] = useState(links[0].link);
-
   const items = links.map((link) => (
     <NavLink
       key={link.label}
@@ -20,16 +16,11 @@ function Navigation() {
       className={({ isActive }) =>
         `${classes.link} ${isActive ? classes.linkActive : ""}`
       }
-      data-active={active === link.link || undefined}
     >
       {link.label}
     </NavLink>
   ));
-  return (
-    <Group gap={5} visibleFrom="xs">
-      {items}
-    </Group>
-  );
+  return <Group gap={5}>{items}</Group>;
 }
 
 export default Navigation;
